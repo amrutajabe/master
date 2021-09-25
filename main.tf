@@ -1,16 +1,8 @@
 provider "aws" {
-  region     = "ap-northeast-1"
-  access_key = ""
-  secret_key = ""
-}
-resource "aws_instance" "myec2" {
-	ami = "ami-0f53b51ee1388fd0b"
-	instance_type = "t2.micro"
-	key_name = "1233"
-	tags = {
-	Name = "mymachine"
-	}
+  region     = "us-west-1"
+  access_key = "AKIA3JQCPV4KIO367HGY"
+  secret_key = "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"
 }
 resource "aws_s3_bucket" "mybucket" {
-	bucket = "mybestb3456ucket"
+	bucket = "mybestb3456ucket1"
 }
